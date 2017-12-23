@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/style.css';
 
-/* Compile the style.scss file in src/assets folder to get style.css */
-
 class TodoApp extends React.Component {
   constructor(props) {
     super(props);
