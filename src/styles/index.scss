@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500);
+
+@mixin flex-c {
+  display: flex;
+  align-items: center;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #FFF;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.todo {
+  margin: auto;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-header {
+    margin-top: 144px;
+    margin-bottom: 72px;
+  }
+  &-app {
+    @include flex-c;
+    width: 320px;
+    justify-content: space-between;
+  }
+  &-list {
+    width: 320px;
+    height: 320px;
+    overflow-y: auto;
+    &-items {
+      @include flex-c;
+      margin: auto;
+      width: 260px;
+      justify-content: space-between;
+      &-delete {
+        color: red;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-left: 1px solid #EEE;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #CCC;
+  outline: 1px solid slategrey;
+}
