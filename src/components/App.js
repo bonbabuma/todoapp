@@ -56,7 +56,7 @@ class App extends React.Component {
         {/* Footer */}
         <footer>
           <div>
-            Made with <i className="fa fa-heart" aria-hidden="true"></i> by <a href="http://dikshantpatodia.github.io">Dikshant Patodia</a>
+            Made with <i className="fa fa-heart icon" aria-hidden="true"></i> by <a href="http://dikshantpatodia.github.io">Dikshant Patodia</a>
           </div>
         </footer>
       </main>

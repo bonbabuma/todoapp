@@ -15,7 +15,7 @@ class TodoList extends React.Component {
           return (
             <div key={index} className="todo-list-items">
               <p className="todo-list-items-name">{i.text}</p>
-              <i className="fa fa-trash todo-list-items-delete" aria-hidden="true" onClick={this.props.handleDelete.bind(null, i)} ></i>
+              <i className="fa fa-trash icon" aria-hidden="true" onClick={this.props.handleDelete.bind(null, i)} ></i>
             </div>
           );
         })

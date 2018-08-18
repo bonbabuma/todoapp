@@ -40,11 +40,12 @@ body {
       margin: auto;
       width: 260px;
       justify-content: space-between;
-      &-delete {
-        color: red;
-      }
     }
   }
+}
+
+.icon {
+  color: red;
 }
 
 ::-webkit-scrollbar {
